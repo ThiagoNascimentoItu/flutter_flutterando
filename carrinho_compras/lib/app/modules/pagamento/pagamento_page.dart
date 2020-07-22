@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'home_controller.dart';
+import 'pagamento_controller.dart';
 
-class HomePage extends StatefulWidget {
+class PagamentoPage extends StatefulWidget {
   final String title;
-  const HomePage({Key key, this.title = "Home"}) : super(key: key);
+  const PagamentoPage({Key key, this.title = "Pagamento"}) : super(key: key);
 
   @override
-  _HomePageState createState() => _HomePageState();
+  _PagamentoPageState createState() => _PagamentoPageState();
 }
 
-class _HomePageState extends ModularState<HomePage, HomeController> {
+class _PagamentoPageState
+    extends ModularState<PagamentoPage, PagamentoController> {
   //use 'controller' variable to access controller
 
   @override
