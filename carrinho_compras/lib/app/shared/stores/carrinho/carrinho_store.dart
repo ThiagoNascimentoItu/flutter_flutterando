@@ -1,6 +1,7 @@
-import 'package:carrinho_compras/app/modules/shared/models/carrinho_model/carrinho_model.dart';
 import 'package:carrinho_compras/app/modules/produto/models/produto_model.dart';
+import 'package:carrinho_compras/app/shared/models/carrinho_model/carrinho_model.dart';
 import 'package:mobx/mobx.dart';
+
 part 'carrinho_store.g.dart';
 
 class CarrinhoStore = _CarrinhoStoreBase with _$CarrinhoStore;

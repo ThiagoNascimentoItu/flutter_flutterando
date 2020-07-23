@@ -1,9 +1,6 @@
-import 'package:carrinho_compras/app/modules/compra/pages/carrinho/widgets/carrinho_lista_produtos/carrinho_lista_produtos_module.dart';
-import 'package:flutter_modular/flutter_modular_test.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  initModule(CarrinhoListaProdutosModule());
   // CarrinhoListaProdutosController carrinholistaprodutos;
   //
   setUp(() {

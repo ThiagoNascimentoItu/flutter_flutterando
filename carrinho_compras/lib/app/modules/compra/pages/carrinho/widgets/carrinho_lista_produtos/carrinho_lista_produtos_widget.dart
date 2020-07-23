@@ -1,31 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_modular/flutter_modular.dart';
-import 'carrinho_lista_produtos_controller.dart';
 
-class CarrinhoListaProdutosWidget extends StatefulWidget {
-  final String title;
-  const CarrinhoListaProdutosWidget(
-      {Key key, this.title = "CarrinhoListaProdutos"})
-      : super(key: key);
-
-  @override
-  _CarrinhoListaProdutosWidgetState createState() =>
-      _CarrinhoListaProdutosWidgetState();
-}
-
-class _CarrinhoListaProdutosWidgetState extends ModularState<
-    CarrinhoListaProdutosWidget, CarrinhoListaProdutosController> {
-  //use 'controller' variable to access controller
-
+class CarrinhoListaProdutosWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Column(
-        children: <Widget>[],
-      ),
+    return ListView.builder(
+      shrinkWrap: true,
+      itemCount: 6,
+      physics: NeverScrollableScrollPhysics(),
+      itemBuilder: (context, index) {
+        return Card(
+          margin: EdgeInsets.all(5),
+          child: ListTile(
+              leading: CircleAvatar(
+                child: Text("P$index"),
+              ),
+              title: Text("Produto $index"),
+              trailing: Text("R\$ ${3 * index}")),
+        );
+      },
     );
   }
 }

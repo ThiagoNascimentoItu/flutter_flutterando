@@ -1,5 +1,6 @@
-import 'package:carrinho_compras/app/modules/shared/models/usuario/usuario_model.dart';
+import 'package:carrinho_compras/app/shared/models/usuario/usuario_model.dart';
 import 'package:mobx/mobx.dart';
+
 part 'auth_store.g.dart';
 
 class AuthStore = _AuthStoreBase with _$AuthStore;

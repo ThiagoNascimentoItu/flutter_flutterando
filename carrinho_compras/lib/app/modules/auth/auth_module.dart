@@ -1,4 +1,4 @@
-import 'package:carrinho_compras/app/modules/shared/stores/auth/auth_store.dart';
+import 'package:carrinho_compras/app/shared/stores/auth/auth_store.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 import 'auth_controller.dart';

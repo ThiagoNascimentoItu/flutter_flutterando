@@ -1,5 +1,4 @@
 import 'package:carrinho_compras/app/modules/compra/pages/carrinho/carrinho_module.dart';
-import 'package:carrinho_compras/app/modules/shared/stores/carrinho/carrinho_store.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 import 'compra_controller.dart';
@@ -8,7 +7,7 @@ import 'compra_page.dart';
 class CompraModule extends ChildModule {
   @override
   List<Bind> get binds => [
-        Bind((i) => CompraController(i.get<CarrinhoStore>())),
+        Bind((i) => CompraController()),
       ];
 
   @override

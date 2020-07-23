@@ -1,13 +1,15 @@
 import 'package:carrinho_compras/app/modules/produto/repositories/produto_repository.dart';
-import 'package:carrinho_compras/app/modules/shared/stores/auth/auth_store.dart';
+import 'package:carrinho_compras/app/shared/stores/auth/auth_store.dart';
+import 'package:dio/dio.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 import 'produto_controller.dart';
-import 'package:flutter_modular/flutter_modular.dart';
 import 'produto_page.dart';
 
 class ProdutoModule extends ChildModule {
   @override
   List<Bind> get binds => [
+        Bind((i) => ProdutoRepository(Dio())),
         Bind(
             (i) => ProdutoController(i.get<ProdutoRepository>(),
                 i.args.params["idLoja"], i.get<AuthStore>()),

@@ -1,5 +1,5 @@
-import 'package:carrinho_compras/app/modules/shared/models/usuario/usuario_model.dart';
-import 'package:carrinho_compras/app/modules/shared/stores/auth/auth_store.dart';
+import 'package:carrinho_compras/app/shared/models/usuario/usuario_model.dart';
+import 'package:carrinho_compras/app/shared/stores/auth/auth_store.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';

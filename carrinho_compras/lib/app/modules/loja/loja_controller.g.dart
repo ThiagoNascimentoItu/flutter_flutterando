@@ -9,12 +9,12 @@ part of 'loja_controller.dart';
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
 
 mixin _$LojaController on _LojaControllerBase, Store {
-  Computed<bool> _$isloggerComputed;
+  Computed<bool> _$isLoggedComputed;
 
   @override
-  bool get islogger =>
-      (_$isloggerComputed ??= Computed<bool>(() => super.islogger,
-              name: '_LojaControllerBase.islogger'))
+  bool get isLogged =>
+      (_$isLoggedComputed ??= Computed<bool>(() => super.isLogged,
+              name: '_LojaControllerBase.isLogged'))
           .value;
 
   final _$lojasAtom = Atom(name: '_LojaControllerBase.lojas');
@@ -43,7 +43,7 @@ mixin _$LojaController on _LojaControllerBase, Store {
   String toString() {
     return '''
 lojas: ${lojas},
-islogger: ${islogger}
+isLogged: ${isLogged}
     ''';
   }
 }

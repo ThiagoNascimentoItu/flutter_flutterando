@@ -1,6 +1,5 @@
+import 'package:carrinho_compras/app/modules/produto/models/produto_model.dart';
 import 'package:mobx/mobx.dart';
-
-import '../../../produto/models/produto_model.dart';
 
 part 'carrinho_model.g.dart';
 

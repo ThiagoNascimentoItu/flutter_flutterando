@@ -14,12 +14,12 @@ class CarrinhoPage extends StatefulWidget {
 
 class _CarrinhoPageState
     extends ModularState<CarrinhoPage, CarrinhoController> {
-  //use 'controller' variable to access controller
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Carrinho de compras")),
+      appBar: AppBar(
+        title: Text("Carrinho de Compras"),
+      ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(10),
         child: Column(
@@ -34,9 +34,9 @@ class _CarrinhoPageState
               child: RaisedButton(
                 color: Theme.of(context).primaryColor,
                 onPressed: () {
-                  Modular.to.pushNamed("pagamento");
+                  Modular.to.pushNamed("/pagamento");
                 },
-                child: Text("Ir para pagamento"),
+                child: Text("Ir para Pagamento"),
               ),
             )
           ],

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:google_fonts/google_fonts.dart';
+
 import 'loja_controller.dart';
 
 class LojaPage extends StatefulWidget {
@@ -20,7 +21,7 @@ class _LojaPageState extends ModularState<LojaPage, LojaController> {
     return Scaffold(
         floatingActionButton: Observer(
           builder: (_) {
-            if (controller.islogger) {
+            if (controller.isLogged) {
               return FloatingActionButton(
                 onPressed: () {
                   Modular.to.pushNamed("/compra/carrinho/vindo da loja");
@@ -29,6 +30,7 @@ class _LojaPageState extends ModularState<LojaPage, LojaController> {
               );
             } else {
               return FloatingActionButton(
+                backgroundColor: Colors.red,
                 onPressed: () {
                   Modular.to.pushNamed("/login");
                 },

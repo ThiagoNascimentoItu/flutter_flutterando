@@ -1,5 +1,5 @@
 import 'package:carrinho_compras/app/modules/produto/repositories/produto_repository.dart';
-import 'package:carrinho_compras/app/modules/shared/stores/auth/auth_store.dart';
+import 'package:carrinho_compras/app/shared/stores/auth/auth_store.dart';
 import 'package:mobx/mobx.dart';
 
 import 'models/produto_model.dart';

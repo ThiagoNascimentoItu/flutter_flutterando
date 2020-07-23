@@ -1,10 +1,10 @@
-import 'package:carrinho_compras/app/modules/loja/repositories/loja_repository.dart';
-import 'package:carrinho_compras/app/modules/shared/stores/auth/auth_store.dart';
+import 'package:carrinho_compras/app/shared/stores/auth/auth_store.dart';
 import 'package:dio/dio.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 import 'loja_controller.dart';
-import 'package:flutter_modular/flutter_modular.dart';
 import 'loja_page.dart';
+import 'repositories/loja_repository.dart';
 
 class LojaModule extends ChildModule {
   @override

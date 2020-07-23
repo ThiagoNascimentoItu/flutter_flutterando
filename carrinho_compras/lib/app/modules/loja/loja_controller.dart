@@ -1,8 +1,8 @@
-import 'package:carrinho_compras/app/modules/loja/repositories/loja_repository.dart';
-import 'package:carrinho_compras/app/modules/shared/stores/auth/auth_store.dart';
+import 'package:carrinho_compras/app/shared/stores/auth/auth_store.dart';
 import 'package:mobx/mobx.dart';
 
 import 'models/loja_model.dart';
+import 'repositories/loja_repository.dart';
 
 part 'loja_controller.g.dart';
 
@@ -17,7 +17,7 @@ abstract class _LojaControllerBase with Store {
   }
 
   @computed
-  bool get islogger => _authStore.isLogged;
+  bool get isLogged => _authStore.isLogged;
 
   @observable
   ObservableList<LojaModel> lojas;

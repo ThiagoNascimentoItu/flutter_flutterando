@@ -1,9 +1,7 @@
-import 'package:carrinho_compras/app/modules/compra/pages/carrinho/widgets/carrinho_total/carrinho_total_module.dart';
-import 'package:flutter_modular/flutter_modular_test.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  initModule(CarrinhoTotalModule());
+  
   // CarrinhoTotalController carrinhototal;
   //
   setUp(() {
