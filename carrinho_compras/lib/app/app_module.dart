@@ -4,7 +4,7 @@ import 'package:flutter_modular/flutter_modular.dart';
 
 import 'app_controller.dart';
 import 'modules/auth/auth_module.dart';
-import 'modules/compra/compra_module.dart';
+import 'modules/detalhe_produto/detalhe_produto_module.dart';
 import 'modules/loja/loja_module.dart';
 import 'modules/pagamento/pagamento_module.dart';
 import 'modules/produto/produto_module.dart';
@@ -27,7 +27,7 @@ class AppModule extends MainModule {
         Router("/produto",
             module: ProdutoModule(), transition: TransitionType.rightToLeft),
         Router("/compra",
-            module: CompraModule(), transition: TransitionType.fadeIn),
+            module: DetalheProdutoModule(), transition: TransitionType.fadeIn),
         Router("/pagamento",
             module: PagamentoModule(), transition: TransitionType.fadeIn)
       ];

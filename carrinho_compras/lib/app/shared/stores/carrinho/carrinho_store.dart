@@ -19,4 +19,11 @@ abstract class _CarrinhoStoreBase with Store {
       produtoNoCarrinho.add(CarrinhoModel(produtoModel));
     }
   }
+
+  @computed
+  double get total => produtoNoCarrinho
+      .map((element) =>
+          double.parse(element.produto.preco.replaceAll(",", ".")) *
+          element.quantide)
+      .reduce((value, element) => value + element);
 }

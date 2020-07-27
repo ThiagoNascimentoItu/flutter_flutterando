@@ -1,9 +1,9 @@
-import 'package:carrinho_compras/app/modules/compra/compra_module.dart';
+import 'package:carrinho_compras/app/modules/detalhe_produto/detalhe_produto_module.dart';
 import 'package:flutter_modular/flutter_modular_test.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  initModule(CompraModule());
+  initModule(DetalheProdutoModule());
   // CompraController compra;
   //
   setUp(() {
